@@ -1,0 +1,95 @@
+.cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cartItem{
+    width: 1100px;
+    height: 197px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 225, 117, 1);
+    margin: 30px;
+    display: flex;
+    align-items: center;
+}
+
+
+img{
+    margin-left: 30px;
+}
+.rating{
+    margin-left: 30px;
+}
+.stars{
+    display: flex;
+    background-color: rgba(246, 245, 244, 0.7);
+    width: 66px;
+    height: 32px;
+}
+.stars img{
+    margin: 0;
+}
+.block-3{
+    width: 200px;
+    height: 137px;
+    background-color: rgba(246, 245, 244, 0.7); 
+    margin-left: 50px;
+    padding: 24px;
+}
+.block-3-text{
+    width: 83px;
+    height: 25px;
+    background-color: white;
+    padding: 4px 8px 4px 8px;
+    margin-left: 20px;
+}
+
+.block-3 img{
+    margin: 25px;
+}
+
+.block-4{
+    width: 260px;
+    height: 137px;
+    background-color: rgba(246, 245, 244, 0.7); 
+    margin-left: 10px;
+}
+.block-4 img{
+    margin: 0;
+}
+
+.block-4 button{
+    display: inline-flex;
+    background-color: rgba(255, 225, 117, 1);
+    width: 135px;
+    height: 25px;
+    border-radius: 3px;
+    padding: 4px 8px 4px 8px; 
+    font-size: 12px;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    margin: 25px 20px 10px;
+}
+
+.block-4 div{
+    width: 212px;
+    height: 56px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.btn-spielen{
+    width: 174px;
+    height: 64px;
+    border-radius: 5px;
+    padding: 12px 32px 12px 32px;
+    background-color: rgba(8, 65, 61, 1);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 15px;
+    border: none;
+}
+

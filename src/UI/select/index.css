@@ -1,0 +1,35 @@
+.select-sort-wrapper select {
+    -webkit-appearance: none;
+    padding: 8px 30px 8px 8px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    width: 93px;
+    height: 40px;
+  }
+
+  .select-sort-wrapper {
+    position: relative;
+  }
+  
+  .select-sort-wrapper img {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+  .select-wrapper select{
+    padding: 8px 30px 8px 8px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    width: 194px;
+    height: 40px;
+    margin-left: 20px;
+  }
+  .select-wrapper{
+    position: relative;
+  }
+
