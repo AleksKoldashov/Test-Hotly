@@ -1,12 +1,31 @@
+import { useState } from "react"
 import Rating from "./Rating/Rating"
 import bonus from './img/block-4/bonus.svg'
+import galoch from './img/galoch.svg'
+import CheckboxDrop from "../../../UI/checkbox/CheckboxDrop"
+import CartItemDrop from "../CartItemDrop/CartItemDrop"
+
+
 
 export default function CartItem(item) {
-
+const [handle, setHandle]=useState(true)
+const [drop, setDrop] = useState({a:"none",b:"btn-drop"})
 const data = item.item
+const HandleClick=()=>{
+    setHandle(!handle)
+    if(handle){
+        setDrop({a:'block',b:"btn-drop-down"})
+    }else{
+        setDrop({a:'none',b:"btn-drop"})
+    }
 
-    return(
-            <div className="cartItem">
+}
+console.log(drop);
+    return(<>
+       <div className="cartItem">
+                <div className="styleId">
+                    {data.id}
+                </div>
                 <img alt="pic" src={data.pic}/>
                 <div className="rating">
                     <div>
@@ -34,9 +53,20 @@ const data = item.item
                 </div>
                 <button className="btn-spielen">
                 Jetzt Spielen
-                
                 </button>
-            </div>
+              
+                
+        </div>
+                <button className={drop.b} onClick={()=>{HandleClick()}}>
+                    Mehr Infos
+                    <img alt="galoch" src={galoch}/>
+                </button>
+                <div className="wrapper-drop" style={{display:`${drop.a}`}}>
+                 <CartItemDrop/>
+                
+                </div> 
+    </>
+         
      
     )
 }

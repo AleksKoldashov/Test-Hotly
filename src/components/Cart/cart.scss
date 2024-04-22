@@ -1,6 +1,39 @@
 .cartItem:hover{
     background-color: rgba(255, 225, 117, 0.15);
+    border: 2px solid rgba(255, 225, 117, 1);
     .stars, .block-3, .block-4{
         background-color: white;
     }
  }
+
+ .btn-drop{
+    position:relative;
+    top: -23px;
+    right: -30px;
+    background: none;
+    border: none;
+    width: 200px;
+    display: flex;
+ }
+
+ .btn-drop-down{
+    width: 1100px;
+    height: 19px;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    img{
+        transform: rotate(180deg);
+    }
+ }
+
+ .wrapper-drop{
+    width: 1100px;
+    height: 197px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    margin: 0px 0px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+ }
+

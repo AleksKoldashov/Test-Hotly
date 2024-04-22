@@ -1,0 +1,70 @@
+.drop-block-1{
+   position: relative;
+   top: 19px;
+   left: 25px;
+   width: 222px;
+   height: 97px;
+ }
+ .drop-block-1 span{
+   position: relative;
+   top: -11px;
+   left: 1px;
+ }
+ .drop-block-2{
+   position: relative;
+   top: -88px;
+   left: 330px;
+    width: 248px;
+    height: 109px;
+    display:block;
+ }
+ .db2c{
+   margin-top: 5px;
+ }
+ .drop-block-2 img{
+    width: 80px;
+    height: 40px;
+    margin: 0;
+ }
+ .drop-block-3{
+   position: relative;
+   top: -196px;
+   left: 610px;
+    width: 248px;
+    height: 109px;
+ }
+
+.drop-block-3 img{
+   width: 80px;
+   height: 40px;
+   margin: 0;
+}
+.db3c{
+   margin-top: 5px;
+ }
+ .drop-block-4{
+   position: relative;
+   top: -298px;
+   left: 880px;
+    width: 232px;
+    height: 102px;
+    display: flex;
+    flex-direction: column
+ }
+ .db41{
+   display: flex;
+   justify-content: space-evenly;
+ }
+ .db42{
+   display: flex;
+   justify-content: space-around;
+ }
+ .hr1{
+   position: relative;
+   top: -260px;
+ }
+ .text-footer{
+   position: relative;
+   top: -250px;
+   left: 30px;
+ }
