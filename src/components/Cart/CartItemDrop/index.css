@@ -1,3 +1,4 @@
+
 .drop-block-1{
    position: relative;
    top: 19px;
@@ -48,16 +49,17 @@
    left: 880px;
     width: 232px;
     height: 102px;
-    display: flex;
-    flex-direction: column
  }
  .db41{
    display: flex;
-   justify-content: space-evenly;
+   font-size: 12px;
+
  }
  .db42{
    display: flex;
-   justify-content: space-around;
+   font-size: 16px;
+   font-weight: 600;
+   margin-top: 5px;
  }
  .hr1{
    position: relative;

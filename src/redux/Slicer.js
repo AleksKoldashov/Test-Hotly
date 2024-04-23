@@ -4,7 +4,7 @@ const AddElem=(add, addItem)=>{
  const arr = add.find(
   item=>item===addItem
 )
- console.log(arr);
+
 if(!arr&&addItem!=='Sort'){
   return [ ...add,addItem]
 }else{
@@ -16,7 +16,6 @@ const DelElem=(del, delItem)=>{
   const arr = del.filter(
     item=>item!==delItem
   )
-  console.log(arr);
   return [...arr]
 }
 
@@ -31,12 +30,15 @@ export const counterSlice = createSlice({
       state.value += 1
     },
     addSort: (state, action) =>{
-      console.log(action.payload);
+    
       state.add = AddElem(state.add, action.payload)
     },
     DelElmSort: (state, action) =>{
-      console.log(action.payload);
+      
       state.add = DelElem(state.add, action.payload)
+    },
+    RemoveSort: (state, action) =>{
+      state.add = []
     },
   },
 })
@@ -44,6 +46,7 @@ export const counterSlice = createSlice({
 export const { 
   increment,
   addSort,
-  DelElmSort } = counterSlice.actions
+  DelElmSort,
+  RemoveSort } = counterSlice.actions
 
 export default counterSlice.reducer

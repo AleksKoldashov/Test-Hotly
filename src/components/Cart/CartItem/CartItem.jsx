@@ -2,14 +2,17 @@ import { useState } from "react"
 import Rating from "./Rating/Rating"
 import bonus from './img/block-4/bonus.svg'
 import galoch from './img/galoch.svg'
-import CheckboxDrop from "../../../UI/checkbox/CheckboxDrop"
 import CartItemDrop from "../CartItemDrop/CartItemDrop"
 
 
 
+
 export default function CartItem(item) {
+  
 const [handle, setHandle]=useState(true)
 const [drop, setDrop] = useState({a:"none",b:"btn-drop"})
+
+
 const data = item.item
 const HandleClick=()=>{
     setHandle(!handle)
@@ -18,17 +21,24 @@ const HandleClick=()=>{
     }else{
         setDrop({a:'none',b:"btn-drop"})
     }
-
 }
-console.log(drop);
+
+
+
+
     return(<>
+       <div className="filter_class" style={{display:`${data.popular}`}}>Additional deposit upon registration</div>
        <div className="cartItem">
                 <div className="styleId">
                     {data.id}
                 </div>
-                <img alt="pic" src={data.pic}/>
+                <div className="img_cartItem">
+                    <img alt="pic" src={data.pic}/>
+                    <a href="/#">{data.a}</a>
+                </div>
+               
                 <div className="rating">
-                    <div>
+                    <div className="Expert">
                     Expert Bewertung
                     <img alt="pic" src={data.ch}/>
                     </div>

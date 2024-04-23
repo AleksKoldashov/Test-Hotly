@@ -44,21 +44,20 @@ export default function CartItemDrop(params) {
         <div className="drop-block-4">
         <div className="db41">
         <span>Auszahl.Dauer</span>
-        <span>Jahr</span>
+        <span style={{marginLeft:'50px'}}>Jahr</span>
         </div >
         <div className="db42">
         <span>Sofort</span>
-        <span>2015</span>
+        <span style={{marginLeft:'85px'}}>2015</span>
         </div>
-        <div className="db41">
-        <span>Auszahl.Dauer</span>
-        <span>Lizenzart</span>
+        <div className="db41" style={{marginTop:'15px'}}>
+        <span>Auszahl. Limit</span>
+        <span style={{marginLeft:'50px'}}>Lizenzart</span>
         </div >
-        <div className="db42">
+        <div className="db42" >
         <span>20000€/Monat:</span>
-        <span>MGA</span>
+        <span style={{marginLeft:'15px'}}>MGA</span>
         </div>
-       
         </div>
         <hr className="hr1"/>
         <span className="text-footer"> 18+. AGB gelten. Verantwortungsbewusstes Spielen</span>   

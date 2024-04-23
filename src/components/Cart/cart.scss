@@ -1,6 +1,9 @@
 .cartItem:hover{
     background-color: rgba(255, 225, 117, 0.15);
     border: 2px solid rgba(255, 225, 117, 1);
+    .styleId{
+      background-color: rgba(255, 225, 117, 1)
+    }
     .stars, .block-3, .block-4{
         background-color: white;
     }
@@ -31,9 +34,11 @@
     height: 197px;
     border-radius: 5px;
     border: 2px solid rgba(255, 255, 255, 1);
-    margin: 0px 0px;
     display: flex;
     align-items: center;
     background-color: rgba(255, 255, 255, 1);
+    margin-bottom: 15px;
  }
+
+ 
 

@@ -1,7 +1,6 @@
 import './index.css'
 
 export default function CheckboxDrop(item) {
-    console.log(item.item);
     const elem = item.item
     return(
         <>

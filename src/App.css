@@ -7,20 +7,42 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 25px;
-    
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins-Black";
 }
-
+.h1baner{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 5px 180px 0px 180px;
+}
+.h1baner h1{
+    font-weight: 600;
+    font-size: 72px;
+}
+.h1baner h6{
+    font-weight: 400;
+    font-size: 14px;
+}
 .header-btn{
     max-width: 1100px;
     display: flex;
     justify-content: center;
+    margin: auto;
+}
+.header-disc h4{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .header-disc{
     max-width: 1404px;
+    margin: auto;
     height: 429px;
-    border: 1px solid black;
+    border:none;
+    border-radius: 10px;
     background-color: rgba(10, 81, 76, 1);
     color: white;
     display: flex;
@@ -40,7 +62,17 @@
     border:2px solid teal; 
 }
 
-
+.pagination{
+    font-size: 16px;
+    font-weight: 600;
+    background: rgba(10, 81, 76, 0.12);
+    border: none;
+    border-radius: 5px;
+    width: 1100px;
+    height: 48px;
+    margin: auto;
+    cursor: pointer;
+}
 
 
   

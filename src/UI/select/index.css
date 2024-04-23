@@ -1,16 +1,35 @@
-.select-sort-wrapper select {
-    -webkit-appearance: none;
+.select-sort-wrapper{
+    background-color: white;
     padding: 8px 30px 8px 8px;
     border: 1px solid #ccc;
     border-radius: 7px;
     width: 93px;
     height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .select-sort-wrapper span{
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 600;
   }
 
   .select-sort-wrapper {
     position: relative;
   }
-  
+  .selector_sort{
+    position: absolute;
+    top: 45px;
+    left: 1px;
+    width: 239px;
+    height: 108px;
+    background-color: white;
+  }
+
+
+
   .select-sort-wrapper img {
     width: 16px;
     height: 16px;
@@ -33,3 +52,41 @@
     position: relative;
   }
 
+  .select-block{
+    width: 194px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .select-block-1{
+    width: 194px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(10, 81, 76, 1);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+  
+  .selectDrop{
+    width: 194px;
+    height: 220px;
+    border: none;
+    z-index: 100;
+    position: absolute;
+    background: white;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+
+ 
+  

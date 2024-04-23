@@ -1,0 +1,20 @@
+.header_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_btn img{
+    margin: 0;
+}
+
+.btn_h_drop{
+  border: none;
+  background: none;
+  margin-left: 20px;
+  display: flex;
+
+}
+
+.btn_h_drop img{
+    margin-left: 5px;
+}

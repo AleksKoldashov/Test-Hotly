@@ -4,17 +4,18 @@ import SelectSort from "../UI/select/selectsort";
 import arrow from './img/arrow.svg'
 import './sorted.css'
 import cross from './img/cross.svg'
-import { DelElmSort } from "../redux/Slicer";
-import Select from "../UI/select/select";
+import { DelElmSort, RemoveSort } from "../redux/Slicer";
+import SelectDrop from "../UI/select/select";
+import BtnInfo from "../UI/Btn_info/BtnInfo";
+import BtnAllFilter from "../UI/BtnAllFilter/BtnAllFilter";
+
 
 const data = [
-    {id:1, title:'Sort'},
     {id:2, title:'Nach Bewertung'},
     {id:3, title:'Nach Höhe der Prämie'},
     {id:4, title:'Durch Neuheit'},
 ]
 const data2 = [
-    {id:1, title:'Deposit Methoden'},
     {id:2, title:'A1'},
     {id:3, title:'Binance'},
     {id:4, title:'iDebit'},
@@ -23,18 +24,34 @@ const data2 = [
     {id:7, title:'ROMA'},
     {id:8, title:'Sepa'},
 ]
+const data3=[
+    {id:1, title:'Malta Gaming Authority (MGA)'},
+    {id:2, title:'Gibraltar Gambling Commission'},
+    {id:3, title:'Curacao eGaming'},
+    {id:4, title:'Kahnawake Gaming Commission'},
+    {id:5, title:'Swedish Gambling Authority'},
+    {id:6, title:'Danish Gambling Authority'},
+    {id:7, title:'New Jersey Division of Gaming Enforcement'},
+]
+
+
 export default function Sorted (){
     const add = useSelector(state=>state.stateManeger.add)
     const dispatch = useDispatch()
-    console.log(add);
-    
+  
     return(
         <div>
+      
         <div className="sorted">
+        <h1 className="header_sort">Die besten online Glücksspiel Angebote </h1>
+        <div className="sorted_block">
          <SelectSort imgi={arrow} data={data}/>
-         <SelectSort imgi={arrow} data={data2}/>
-         <SelectSort imgi={arrow} data={data}/>
-         <SelectSort imgi={arrow} data={data}/>
+         <SelectDrop data2={data2} name='Deposit Methoden'/>
+         <SelectDrop data2={data3} name='Lizenzen' w='376px' hidth='220px'/>
+         <SelectDrop data2={data3} name='Bonusprogramm'/>
+         <BtnInfo/>
+         <BtnAllFilter/>
+        </div>
          </div>
         <div className="wrapper-filterIcons"> 
         {add.map((item)=>
@@ -46,7 +63,9 @@ export default function Sorted (){
          onClick={()=>{dispatch(DelElmSort(item))}}
          />
          </div>)}
+         <button onClick={()=>{dispatch(RemoveSort())}} className="clearAll">Clear All</button>
          </div>
+   
         </div>
        
         

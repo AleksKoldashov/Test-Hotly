@@ -1,30 +1,34 @@
 import './index.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { addSort } from '../../redux/Slicer'
+import galoch from './galoch.svg'
+import { useState } from 'react'
+import ChechSelect from './checkbox'
 
-export default function Select({data}) {
-    const count = useSelector((state) => state.stateManeger)
-    const dispatch = useDispatch()
-    
-    
-    
-    
+export default function SelectDrop({data2, name, w, hidth}) {
+
+    const [drop, setDrop]=useState({a:'none', b:'select-block'})
+    const [togl, setTogl]=useState(true)
+
+
+    const handelClick=()=>{
+        setTogl(!togl)
+        if(togl){
+            setDrop({a:'block', b:'select-block-1'})
+        }else{
+            setDrop({a:'none', b:'select-block'})
+        }
+    }
         return(
-            <div>
-                <div>
-                    <select>
-                    {data.map((item)=><option multiple value={item.title}> <input type="checkbox"/></option>)}     
-                    </select>   
-                </div>     
-                <form>
-<p>
-	<input type="checkbox" name="cbox" value="one"/>
-	<input type="checkbox" name="cbox" value="two" checked="checked"/>
-	<input type="checkbox" name="cbox" value="three"/>
-	<input type="checkbox" name="cbox" value="four" checked/>
-	<input type="checkbox" name="cbox" value="five"/>
-</p>
-</form>
+            <div className='wrapper-selectDrop'>
+                <div className={drop.b} onClick={()=>{handelClick()}}>
+                    <h4>{name}</h4>
+                    <img alt='galoch' src={galoch}/>
+                </div> 
+                <div className="selectDrop" style={{display:`${drop.a}`,width:`${w}`,height:`${hidth}`}}>
+                   {data2.map((item)=><ChechSelect key={item} item={item}/>)}
+                </div>
+               
             </div>
         )
     }
