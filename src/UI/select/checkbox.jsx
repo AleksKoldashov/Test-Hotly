@@ -8,10 +8,10 @@ export default function ChechSelect(item) {
 
     return (
         <>
-        <label class="checkbox style-c" >
+        <label className="checkbox style-c" >
         <input type="checkbox"/>
-        <div class="checkbox__checkmark" onClick={e=>{dispatch(addSort(item.item.title))}}></div>
-        <div class="checkbox__body">{item.item.title}</div>
+        <div className="checkbox__checkmark" onClick={e=>{dispatch(addSort(item.item.title))}}></div>
+        <div className="checkbox__body">{item.item.title}</div>
         </label>
         </>
     )

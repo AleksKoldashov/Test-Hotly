@@ -7,10 +7,10 @@ export default function CheckboxSort({item}) {
     
     return(
         <div>
-            <label class="checkbox style-y">
+            <label className="checkbox style-y">
             <input type="checkbox"/>
-            <div class="checkbox__checkmark-y"></div>
-            <div class="checkbox__body-y" onClick={()=>{dispatch(addSort(item.title))}}>{item.title}</div>
+            <div className="checkbox__checkmark-y"></div>
+            <div className="checkbox__body-y" onClick={()=>{dispatch(addSort(item.title))}}>{item.title}</div>
             </label>
         </div>
     )

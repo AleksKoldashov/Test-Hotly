@@ -25,7 +25,7 @@ const handelClick=()=>{
            <span>Sort</span>
            <img alt='arrow' src={arrow}/> 
            <div className="selector_sort" style={{display:`${drop.a}`}}>
-               {data.map((item)=> <CheckboxSort key={item} item={item}/>)}
+               {data.map((item,index)=> <CheckboxSort key={index} item={item}/>)}
              
            </div>
         </div>

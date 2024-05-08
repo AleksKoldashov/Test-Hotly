@@ -24,7 +24,7 @@ export default function Cart(params) {
     return(
         <div className="cart">
           
-           {data.map(item=><CartItem item={item}/>)}
+           {data.map(item=><CartItem key={item.id} item={item}/>)}
            <button className='pagination'>Zeig mehr</button>
         </div>
     )

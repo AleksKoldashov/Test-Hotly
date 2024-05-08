@@ -27,18 +27,18 @@ export default function CartItemDrop(params) {
         <>
         <div className="drop-block-1">
             <span>Nützliche Informationen</span>
-            {dataCheckboxDrop.map((item)=><CheckboxDrop item={item}/>)}
+            {dataCheckboxDrop.map((item, index)=><CheckboxDrop key={index} item={item}/>)}
         </div>
         <div className="drop-block-2">
         <span>Nützliche Informationen</span>
         <div className="db2c">
-            {payMethod.map((item)=><img alt="cart" src={item.l}/>)}
+            {payMethod.map((item, index)=><img alt="cart" key={index} src={item.l}/>)}
         </div>
         </div>
         <div className="drop-block-3">
         <span>Krypto-Zahlungen</span>
         <div className="db3c">
-        {info.map((item)=><img alt="info" src={item.i}/>)}
+        {info.map((item, index)=><img alt="info" key={index} src={item.i}/>)}
         </div>
         </div>
         <div className="drop-block-4">

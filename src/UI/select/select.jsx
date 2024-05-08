@@ -1,6 +1,4 @@
 import './index.css'
-import { useDispatch, useSelector } from 'react-redux'
-import { addSort } from '../../redux/Slicer'
 import galoch from './galoch.svg'
 import { useState } from 'react'
 import ChechSelect from './checkbox'
@@ -26,7 +24,7 @@ export default function SelectDrop({data2, name, w, hidth}) {
                     <img alt='galoch' src={galoch}/>
                 </div> 
                 <div className="selectDrop" style={{display:`${drop.a}`,width:`${w}`,height:`${hidth}`}}>
-                   {data2.map((item)=><ChechSelect key={item} item={item}/>)}
+                   {data2.map((item,index)=><ChechSelect key={index} item={item}/>)}
                 </div>
                
             </div>
